@@ -1,8 +1,7 @@
+#include "IO.hpp"
 #include <iostream>
 #include <string>
 #include <fstream>
-#include "IO.hpp"
-#include <string>
 #include <sstream>
 
 class ReadEnv{
@@ -13,7 +12,7 @@ class ReadEnv{
             std::fstream f_stream = io.getFileStream();
             std::stringstream buffer;
             buffer << f_stream.rdbuf();
-            std::string  content = buffer.str();
+            std::string content = buffer.str();
             return content;
-        }
+        }    
 };
