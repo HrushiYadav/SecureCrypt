@@ -5,7 +5,7 @@
 #include <fstream>
 #include <string>
 #include <sstream>
-
+#include <iostream> 
 enum class Action {
     ENCRYPT,
     DECRYPT
